@@ -4,8 +4,13 @@
       <stop offset="0%" stop-color="#d60270"/>
       <stop offset="100%" stop-color="#0038a8"/>
     </linearGradient>
-    <rect id="a" x="0" y="0" width="1200" height="600" rx="25"/>
+    <clipPath id="roundedClip">
+      <rect x="0" y="0" width="1200" height="600" rx="25"/>
+    </clipPath>
   </defs>
-  <use href="#a" fill="url(#b)"/>
-  <rect x="0" y="0" width="1200" height="600" fill="black" opacity="0.5"/>
+  
+  <g clip-path="url(#roundedClip)">
+    <rect x="0" y="0" width="1200" height="600" fill="url(#b)"/>
+    <rect x="0" y="0" width="1200" height="600" fill="black" opacity="0.5"/>
+  </g>
 </svg>
