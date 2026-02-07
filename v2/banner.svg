@@ -4,10 +4,16 @@
       <stop offset="0%" stop-color="#d60270"/>
       <stop offset="100%" stop-color="#0038a8"/>
     </linearGradient>
-    <rect id="a" x="0" y="0" width="1200" height="600" rx="25"/>
+    <clipPath id="roundedClip">
+      <rect x="0" y="0" width="1200" height="600" rx="25"/>
+    </clipPath>
   </defs>
-  <use href="#a" fill="url(#b)"/>
-  <rect x="0" y="0" width="1200" height="600" fill="black" opacity="0.5"/>
+  
+  <g clip-path="url(#roundedClip)">
+    <rect x="0" y="0" width="1200" height="600" fill="url(#b)"/>
+    <rect x="0" y="0" width="1200" height="600" fill="black" opacity="0.5"/>
+  </g>
+  
   <svg xmlns="http://www.w3.org/2000/svg" x="420" y="120" width="360" height="360" fill="none" viewBox="0 0 360 360">
     <path stroke="#fff" stroke-width="30" d="M243.143 360v-27.56a165 165 0 1 0-126.286 0V360M228.5 345H360M0 345h131.5"/>
   </svg>
